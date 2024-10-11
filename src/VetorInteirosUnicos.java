@@ -37,7 +37,7 @@ public class VetorInteirosUnicos{
         return -1;
     }
 
-    public boolean adicionar(int valor){
+    public boolean inserir(int valor){
         //verificação se positivo
         if(valor < 0){
             return false;
