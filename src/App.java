@@ -10,17 +10,24 @@ public class App {
 
         vetor = new VetorInteirosUnicos(5);
 
-        boolean ret = vetor.adicionar(-1);
+        vetor.inserir(1);
+        vetor.inserir(2);
+        vetor.inserir(3);
+        vetor.inserir(4);
         
-        ret = vetor.adicionar(1);
-        ret = vetor.adicionar(1);
-
-        ret = vetor.adicionar(2);
-        ret = vetor.adicionar(3);
-        ret = vetor.adicionar(4);
-        ret = vetor.adicionar(5);
-        ret = vetor.adicionar(6);
-
+        System.out.println(vetor.soma());
+        System.out.println(vetor.maior());
+        System.out.println(vetor.menor());
+        System.out.println(vetor.media());
+        System.out.println(vetor);
+        vetor.remover(3);
+        System.out.println(vetor);
+        System.out.println(vetor.soma());
+        System.out.println(vetor.maior());
+        System.out.println(vetor.menor());
+        System.out.println(vetor.media());
+        vetor.limpa();
+        System.out.println(vetor);
 
 
         System.out.println("Fim!");
